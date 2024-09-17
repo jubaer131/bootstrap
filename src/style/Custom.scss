@@ -1,0 +1,44 @@
+// 1. Import Bootstrap functions first
+@import "~bootstrap/scss/functions";
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// 2. Override Bootstrap variables before importing Bootstrap's styles
+$primary: #14a899;
+$danger: #dc3545;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$light: #f8f9fa;
+$dark: #212529;
+
+// Import Bootstrap's variables and mixins
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// 3. Import Bootstrap's core styles
+@import "~bootstrap/scss/bootstrap";
+
+// 4. Add your custom styles below
+body {
+    background-color: $light;
+    color: $dark;
+}
+
+.custom-button {
+    background-color: $primary;
+    color: $light;
+    border: none; // Optional: Customize button appearance further
+}
+
+// Override more Bootstrap variables
+$font-family-sans-serif: 'Helvetica, Arial, sans-serif';
+$font-size-base: 1rem;
+$spacer: 1.5rem;
+
+.app {
+    color: #dc3545;
+}

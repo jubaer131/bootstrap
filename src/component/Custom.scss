@@ -1,0 +1,41 @@
+.add {
+    color: brown;
+}
+
+$primary: #278349;
+$danger: #8f7779;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$light: #f8f9fa;
+$dark: #212529;
+/* custom.scss */
+
+// Variables
+$primary-color: #0d6efd;
+$light-bg: #f8f9fa;
+
+// Nesting and reusability
+body {
+    background-color: $light-bg;
+    color: darken($primary-color, 10%);
+
+    .btn-primary {
+        background-color: $primary-color;
+    }
+}
+
+// Mixins for reusable code
+@mixin button-styles($color, $bg) {
+    color: $color;
+    background-color: $bg;
+    padding: 10px;
+}
+
+.custom-button {
+    @include button-styles(white, $primary-color);
+}
+
+// Variables
+$primary-color: #0d6efd;
+$light-bg: #f8f9fa;
