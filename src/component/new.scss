@@ -1,0 +1,10 @@
+$jubaer: #a25b61;
+$white: #b90514;
+$gradient: linear-gradient(120deg, rgba($white, .80), rgba($white, 50));
+
+
+.bold {
+    background-color: $gradient;
+    background: linear-gradient(to right, #00C9FF, #92FE9D);
+    color: linear-gradient(to left, #00C9FF, #92FE9D);
+}
